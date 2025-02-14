@@ -19,6 +19,8 @@ function App() {
     fetchData();
   }, []);
 
+  if (!data) return <div className="flex items-center justify-center min-h-screen">Yüklənir...</div>;
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
@@ -34,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;
